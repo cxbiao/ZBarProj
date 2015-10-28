@@ -1,0 +1,6 @@
+
+include ':zBarScanProjAll', ':QRCode'
+include ':zXingProj'
+include ':qrCodeScan'
+include ':zBarLib'
+include ':zBarBuild'

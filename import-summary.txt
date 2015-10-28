@@ -1,0 +1,52 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .externalToolBuilders\
+* .externalToolBuilders\ZBarBuilder.launch
+* .fatjar
+* proguard-project.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => zBarBuild\src\main\AndroidManifest.xml
+* jni\ => zBarBuild\src\main\jni\
+* libs\arm64-v8a\libiconv.so => zBarBuild\src\main\jniLibs\arm64-v8a\libiconv.so
+* libs\arm64-v8a\libZBarDecoder.so => zBarBuild\src\main\jniLibs\arm64-v8a\libZBarDecoder.so
+* libs\armeabi-v7a\libiconv.so => zBarBuild\src\main\jniLibs\armeabi-v7a\libiconv.so
+* libs\armeabi-v7a\libZBarDecoder.so => zBarBuild\src\main\jniLibs\armeabi-v7a\libZBarDecoder.so
+* libs\armeabi\libiconv.so => zBarBuild\src\main\jniLibs\armeabi\libiconv.so
+* libs\armeabi\libZBarDecoder.so => zBarBuild\src\main\jniLibs\armeabi\libZBarDecoder.so
+* libs\mips64\libiconv.so => zBarBuild\src\main\jniLibs\mips64\libiconv.so
+* libs\mips64\libZBarDecoder.so => zBarBuild\src\main\jniLibs\mips64\libZBarDecoder.so
+* libs\mips\libiconv.so => zBarBuild\src\main\jniLibs\mips\libiconv.so
+* libs\mips\libZBarDecoder.so => zBarBuild\src\main\jniLibs\mips\libZBarDecoder.so
+* libs\x86\libiconv.so => zBarBuild\src\main\jniLibs\x86\libiconv.so
+* libs\x86\libZBarDecoder.so => zBarBuild\src\main\jniLibs\x86\libZBarDecoder.so
+* libs\x86_64\libiconv.so => zBarBuild\src\main\jniLibs\x86_64\libiconv.so
+* libs\x86_64\libZBarDecoder.so => zBarBuild\src\main\jniLibs\x86_64\libZBarDecoder.so
+* res\ => zBarBuild\src\main\res\
+* src\ => zBarBuild\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
