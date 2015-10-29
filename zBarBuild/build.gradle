@@ -9,9 +9,6 @@ android {
         minSdkVersion 11
         targetSdkVersion 23
 
-        ndk {
-            moduleName "libiconv"
-        }
     }
 
     buildTypes {
